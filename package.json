@@ -1,0 +1,14 @@
+{
+  "name": "tefillah-emailer",
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "send": "node --env-file=.env send.js",
+    "preview": "node --env-file=.env send.js --preview",
+    "preview:mock": "node --env-file=.env send.js --preview --mock"
+  },
+  "dependencies": {
+    "@anthropic-ai/sdk": "^0.39.0",
+    "resend": "^4.0.0"
+  }
+}
