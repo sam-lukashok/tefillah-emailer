@@ -2,7 +2,7 @@ name: Daily Tefillah Email
 
 on:
   schedule:
-    - cron: '0 10 * * *'   # 10:00 UTC = 6:00 AM ET — before morning davening
+    - cron: '30 11 * * *'  # 11:30 UTC = 7:30 AM ET — before morning davening
   workflow_dispatch:         # Manual trigger for testing
 
 jobs:
