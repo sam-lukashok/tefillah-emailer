@@ -2,7 +2,7 @@ name: Daily Tefillah Email
 
 on:
   schedule:
-    - cron: '30 11 * * *'  # 11:30 UTC = 7:30 AM ET — before morning davening
+    - cron: '0 8 * * *'    # 8:00 UTC = 4:00 AM ET — buffer for GitHub Actions delays
   workflow_dispatch:         # Manual trigger for testing
 
 jobs:
