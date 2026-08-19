@@ -1,9 +1,12 @@
 name: Daily Tefillah Email
 
 on:
-  schedule:
-    - cron: '0 8 * * *'    # 8:00 UTC = 4:00 AM ET — buffer for GitHub Actions delays
-  workflow_dispatch:         # Manual trigger for testing
+  # Daily schedule disabled — emails stopped intentionally.
+  # To resume: uncomment the schedule block below and re-enable the
+  # workflow in the Actions tab (or `gh workflow disable/enable`).
+  # schedule:
+  #   - cron: '0 8 * * *'    # 8:00 UTC = 4:00 AM ET — buffer for GitHub Actions delays
+  workflow_dispatch:         # Manual trigger only
 
 jobs:
   send:
